@@ -14,7 +14,8 @@ w.onload = function () {
 	 								{'link':'Home','url':'home.html'},
 									{'link':'Contato','url':'contato.html'},
 									{'link':'Biografia','url':'biografia.html'},
-									{'link':'Equipe','url':'equipe.html'}
+									{'link':'Equipe','url':'equipe.html'},
+									{'link':'Skate','url':'skate.html'}
 								   ]
 		};
 		var n_links = json_object.links.length;
@@ -31,8 +32,8 @@ w.onload = function () {
 				a[i].setAttribute('href', json_object.links[i].url);
 				a[i].setAttribute('title', 'Acesse a página ' + json_object.links[i].link.toUpperCase());		
 				a[i].innerHTML = json_object.links[i].link; 
-				item = d.getElementById('link' + [i]);
-				item.appendChild(a[i]);
+				item_menu = d.getElementById('link' + [i]);
+				item_menu.appendChild(a[i]);
 			}	
 		}
 		else {
