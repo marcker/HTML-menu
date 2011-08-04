@@ -10,16 +10,8 @@ w.onload = function () {
 	if (menu) {
 		li = [];
 		a = []
-		var json_object = {'links':[
-	 								{'link':'Home','url':'home.html'},
-									{'link':'Contato','url':'contato.html'},
-									{'link':'Biografia','url':'biografia.html'},
-									{'link':'Equipe','url':'equipe.html'},
-									{'link':'Skate','url':'skate.html'}
-								   ]
-		};
 		var n_links = json_object.links.length;
-
+		
 		if (n_links) {
 			for (i = 0; i <= n_links-1; i++) {
 				//create list ('li' tag)
@@ -42,7 +34,7 @@ w.onload = function () {
 		}	
 	}
 	else {
-		d.write('<p>Erro ao criar o menu (ID menu não existe na página).</p>');
+		d.write('<p>Erro ao criar o menu (ID <i>menu</i> não existe na página).</p>');
 		d.write('<p><a href="javascript:window.location.reload();">Atualize</a> a página caso já tenha corrigido o problema.</p>');
 	}	
 }
