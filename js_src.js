@@ -69,7 +69,7 @@ w.onload = function () {
 			d.write('<p>Erro ao criar o menu (Objeto Json inexistente).</p>');
 			d.write('<p><a href="javascript:window.location.reload();">Atualize</a> a página caso já tenha corrigido o problema.</p>');
 		}
-	}	
+	}		
 	else {
 		d.write('<p>Erro ao criar o menu (ID <i>menu</i> não existe na página HTML).</p>');
 		d.write('<p><a href="javascript:window.location.reload();">Atualize</a> a página caso já tenha corrigido o problema.</p>');
